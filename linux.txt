@@ -1,0 +1,7 @@
+mkdir folder
+cd folder
+touch date_{A..E}
+for A in {A..E}; do date>date_$A; done
+head date_{A..E} | grep 2017 | wc -l
+cd..
+rm -rf folder
